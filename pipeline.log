@@ -1,0 +1,100 @@
+2026-07-20 07:33:10,594 | INFO | STEP 1 : EXTRACT Started
+2026-07-20 07:33:10,594 | INFO | Starting Extract Step
+2026-07-20 07:33:10,617 | INFO | Extract completed successfully
+2026-07-20 07:33:10,617 | INFO | STEP 1 : EXTRACT Completed
+2026-07-20 07:33:10,617 | INFO | STEP 2 : TRANSFORM Started
+2026-07-20 07:33:10,617 | INFO | Starting Transform Step
+2026-07-20 07:33:10,626 | INFO | Transform completed successfully
+2026-07-20 07:33:10,626 | INFO | STEP 2 : TRANSFORM Completed
+2026-07-20 07:33:10,626 | INFO | STEP 3 : VALIDATE Started
+2026-07-20 07:33:10,626 | INFO | Starting Validation Step
+2026-07-20 07:33:10,638 | INFO | Validation completed successfully
+2026-07-20 07:33:10,638 | INFO | STEP 3 : VALIDATE Completed
+2026-07-20 07:33:10,638 | INFO | STEP 4 : INCREMENTAL LOAD Started
+2026-07-20 07:33:10,638 | INFO | Starting Incremental Load
+2026-07-20 07:33:10,650 | INFO | Incremental Load completed
+2026-07-20 07:33:10,650 | INFO | STEP 4 : INCREMENTAL LOAD Completed
+2026-07-20 07:33:10,650 | INFO | STEP 5 : LOAD Started
+2026-07-20 07:33:10,650 | INFO | Starting Load Step
+2026-07-20 07:33:10,652 | INFO | Load completed successfully
+2026-07-20 07:33:10,652 | INFO | STEP 5 : LOAD Completed
+2026-07-20 07:37:57,736 | INFO | STEP 1 : EXTRACT Started
+2026-07-20 07:37:57,736 | INFO | Starting Extract Step
+2026-07-20 07:37:57,743 | INFO | Extract completed successfully
+2026-07-20 07:37:57,743 | INFO | STEP 1 : EXTRACT Completed
+2026-07-20 07:37:57,743 | INFO | STEP 2 : TRANSFORM Started
+2026-07-20 07:37:57,743 | INFO | Starting Transform Step
+2026-07-20 07:37:57,752 | INFO | Transform completed successfully
+2026-07-20 07:37:57,752 | INFO | STEP 2 : TRANSFORM Completed
+2026-07-20 07:37:57,752 | INFO | STEP 3 : VALIDATE Started
+2026-07-20 07:37:57,752 | INFO | Starting Validation Step
+2026-07-20 07:37:57,763 | INFO | Validation completed successfully
+2026-07-20 07:37:57,763 | INFO | STEP 3 : VALIDATE Completed
+2026-07-20 07:37:57,763 | INFO | STEP 4 : INCREMENTAL LOAD Started
+2026-07-20 07:37:57,763 | INFO | Starting Incremental Load
+2026-07-20 07:37:57,773 | INFO | Incremental Load completed
+2026-07-20 07:37:57,773 | INFO | STEP 4 : INCREMENTAL LOAD Completed
+2026-07-20 07:37:57,773 | INFO | STEP 5 : LOAD Started
+2026-07-20 07:37:57,773 | INFO | Starting Load Step
+2026-07-20 07:37:57,775 | INFO | Load completed successfully
+2026-07-20 07:37:57,775 | INFO | STEP 5 : LOAD Completed
+2026-07-21 05:24:31,884 | INFO | STEP 1 : EXTRACT Started
+2026-07-21 05:24:31,884 | INFO | Starting Extract Step
+2026-07-21 05:24:31,892 | INFO | Extract completed successfully
+2026-07-21 05:24:31,892 | INFO | STEP 1 : EXTRACT Completed
+2026-07-21 05:24:31,892 | INFO | STEP 2 : TRANSFORM Started
+2026-07-21 05:24:31,892 | INFO | Starting Transform Step
+2026-07-21 05:24:31,900 | INFO | Transform completed successfully
+2026-07-21 05:24:31,900 | INFO | STEP 2 : TRANSFORM Completed
+2026-07-21 05:24:31,900 | INFO | STEP 3 : VALIDATE Started
+2026-07-21 05:24:31,900 | INFO | Starting Validation Step
+2026-07-21 05:24:31,914 | INFO | Validation completed successfully
+2026-07-21 05:24:31,915 | INFO | STEP 3 : VALIDATE Completed
+2026-07-21 05:24:31,915 | INFO | STEP 4 : INCREMENTAL LOAD Started
+2026-07-21 05:24:31,915 | INFO | Starting Incremental Load
+2026-07-21 05:24:31,926 | INFO | Incremental Load completed
+2026-07-21 05:24:31,926 | INFO | STEP 4 : INCREMENTAL LOAD Completed
+2026-07-21 05:24:31,926 | INFO | STEP 5 : LOAD Started
+2026-07-21 05:24:31,926 | INFO | Starting Load Step
+2026-07-21 05:24:31,928 | INFO | Load completed successfully
+2026-07-21 05:24:31,928 | INFO | STEP 5 : LOAD Completed
+2026-07-21 05:27:50,878 | INFO | STEP 1 : EXTRACT Started
+2026-07-21 05:27:50,878 | INFO | Starting Extract Step
+2026-07-21 05:27:50,886 | INFO | Extract completed successfully
+2026-07-21 05:27:50,886 | INFO | STEP 1 : EXTRACT Completed
+2026-07-21 05:27:50,886 | INFO | STEP 2 : TRANSFORM Started
+2026-07-21 05:27:50,886 | INFO | Starting Transform Step
+2026-07-21 05:27:50,917 | INFO | Transform completed successfully
+2026-07-21 05:27:50,917 | INFO | STEP 2 : TRANSFORM Completed
+2026-07-21 05:27:50,917 | INFO | STEP 3 : VALIDATE Started
+2026-07-21 05:27:50,917 | INFO | Starting Validation Step
+2026-07-21 05:27:50,928 | INFO | Validation completed successfully
+2026-07-21 05:27:50,928 | INFO | STEP 3 : VALIDATE Completed
+2026-07-21 05:27:50,928 | INFO | STEP 4 : INCREMENTAL LOAD Started
+2026-07-21 05:27:50,929 | INFO | Starting Incremental Load
+2026-07-21 05:27:50,939 | INFO | Incremental Load completed
+2026-07-21 05:27:50,939 | INFO | STEP 4 : INCREMENTAL LOAD Completed
+2026-07-21 05:27:50,939 | INFO | STEP 5 : LOAD Started
+2026-07-21 05:27:50,939 | INFO | Starting Load Step
+2026-07-21 05:27:50,941 | INFO | Load completed successfully
+2026-07-21 05:27:50,941 | INFO | STEP 5 : LOAD Completed
+2026-07-21 07:08:01,917 | INFO | STEP 1 : EXTRACT Started
+2026-07-21 07:08:01,917 | INFO | Starting Extract Step
+2026-07-21 07:08:01,925 | INFO | Extract completed successfully
+2026-07-21 07:08:01,925 | INFO | STEP 1 : EXTRACT Completed
+2026-07-21 07:08:01,925 | INFO | STEP 2 : TRANSFORM Started
+2026-07-21 07:08:01,925 | INFO | Starting Transform Step
+2026-07-21 07:08:01,933 | INFO | Transform completed successfully
+2026-07-21 07:08:01,933 | INFO | STEP 2 : TRANSFORM Completed
+2026-07-21 07:08:01,933 | INFO | STEP 3 : VALIDATE Started
+2026-07-21 07:08:01,933 | INFO | Starting Validation Step
+2026-07-21 07:08:01,944 | INFO | Validation completed successfully
+2026-07-21 07:08:01,945 | INFO | STEP 3 : VALIDATE Completed
+2026-07-21 07:08:01,945 | INFO | STEP 4 : INCREMENTAL LOAD Started
+2026-07-21 07:08:01,945 | INFO | Starting Incremental Load
+2026-07-21 07:08:01,955 | INFO | Incremental Load completed
+2026-07-21 07:08:01,956 | INFO | STEP 4 : INCREMENTAL LOAD Completed
+2026-07-21 07:08:01,956 | INFO | STEP 5 : LOAD Started
+2026-07-21 07:08:01,956 | INFO | Starting Load Step
+2026-07-21 07:08:01,957 | INFO | Load completed successfully
+2026-07-21 07:08:01,957 | INFO | STEP 5 : LOAD Completed
