@@ -56,12 +56,12 @@ def extract(source: str = None, **context) -> str:
 # ==========================================================
 # TRANSFORM
 # ==========================================================
-def transform(**context) -> str:
+def transform(input_path: str, **context) -> str:
     """
     Transform extracted data.
     """
 
-    src = os.path.join(DATA_DIR, "extracted.parquet")
+    src = input_path
 
     logger.info("Starting Transform Step")
 
@@ -95,12 +95,12 @@ def transform(**context) -> str:
 # ==========================================================
 # VALIDATE
 # ==========================================================
-def validate(**context) -> bool:
+def validate(input_path: str, **context) -> str:
     """
     Validate transformed data.
     """
 
-    path = os.path.join(DATA_DIR, "transformed.parquet")
+    path = input_path
 
     logger.info("Starting Validation Step")
 
@@ -122,20 +122,20 @@ def validate(**context) -> bool:
 
     logger.info("Validation completed successfully")
 
-    return True
+    return input_path
 
 
 # ==========================================================
 # INCREMENTAL LOAD
 # ==========================================================
-def incremental_load(**context) -> str:
+def incremental_load(input_path: str, **context) -> str:
     """
     Incremental loading using watermark.
     """
 
     logger.info("Starting Incremental Load")
 
-    in_path = os.path.join(DATA_DIR, "transformed.parquet")
+    in_path = input_path
 
     df = pd.read_parquet(in_path)
 
@@ -172,7 +172,7 @@ def incremental_load(**context) -> str:
 # ==========================================================
 # LOAD
 # ==========================================================
-def load(**context) -> bool:
+def load(input_path: str, **context) -> bool:
     """
     Final Load Step.
     """
@@ -180,7 +180,7 @@ def load(**context) -> bool:
 
     logger.info("Starting Load Step")
 
-    path = os.path.join(DATA_DIR, "incremental.parquet")
+    path = input_path
 
     df = pd.read_parquet(path)
 

@@ -109,15 +109,30 @@ def main():
 
     try:
 
-        execute_step("STEP 1 : EXTRACT", extract)
+        print("\n" + "=" * 70)
+        print("STEP 1 : EXTRACT")
+        print("=" * 70)
+        extracted = extract()
 
-        execute_step("STEP 2 : TRANSFORM", transform)
+        print("\n" + "=" * 70)
+        print("STEP 2 : TRANSFORM")
+        print("=" * 70)
+        transformed = transform(extracted)
 
-        execute_step("STEP 3 : VALIDATE", validate)
+        print("\n" + "=" * 70)
+        print("STEP 3 : VALIDATE")
+        print("=" * 70)
+        validated = validate(transformed)
 
-        execute_step("STEP 4 : INCREMENTAL LOAD", incremental_load)
+        print("\n" + "=" * 70)
+        print("STEP 4 : INCREMENTAL LOAD")
+        print("=" * 70)
+        incremental = incremental_load(validated)
 
-        execute_step("STEP 5 : LOAD", load)
+        print("\n" + "=" * 70)
+        print("STEP 5 : LOAD")
+        print("=" * 70)
+        load(incremental)
 
         total_time = time.time() - pipeline_start
 
