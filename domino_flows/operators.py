@@ -3,7 +3,7 @@ import logging
 from datetime import datetime
 
 import pandas as pd
-
+from domino.data_sources import DataSourceClient
 from domino_flows.utils.validation import validate_stage
 from domino_flows.utils.incremental import get_watermark, set_watermark
 from domino_flows.utils.shell_runner import run_shell_command
@@ -19,28 +19,25 @@ logger = logging.getLogger(__name__)
 # ==========================================================
 def extract(source: str = None, **context) -> str:
     """
-    Extract data from source system.
-    Replace this logic with migrated GPS/Davnic shell script.
+    Extract data from Domino Data Source.
     """
 
-    source_name = source or "Example Source"
+    source_name = source or "Domino Data Source"
 
     logger.info("Starting Extract Step")
 
-    df = pd.DataFrame(
-        {
-            "id": [1, 2, 3],
-            "value": [10, 20, 30],
-            "ts": [
-                datetime.utcnow(),
-                datetime.utcnow(),
-                datetime.utcnow(),
-            ],
-        }
-    )
+    ds = DataSourceClient().get_datasource("dominos_data")
 
     path = os.path.join(DATA_DIR, "extracted.parquet")
-    df.to_parquet(path)
+
+    # Download the parquet file from Domino Data Source
+    ds.download_file(
+        "data/extracted.parquet",
+        path
+    )
+
+    # Read the downloaded parquet file
+    df = pd.read_parquet(path)
 
     print(f"Source              : {source_name}")
     print(f"Rows Extracted      : {len(df)}")
@@ -73,7 +70,9 @@ def transform(input_path: str, **context) -> str:
     df["value"] = df["value"] * 1.10
 
     out = os.path.join(DATA_DIR, "transformed.parquet")
-    df.to_parquet(out)
+
+    # Save transformed data
+    df.to_parquet(out, index=False)
 
     print(f"Input File          : {src}")
     print(f"Rows Read           : {before}")
@@ -90,7 +89,6 @@ def transform(input_path: str, **context) -> str:
     logger.info("Transform completed successfully")
 
     return out
-
 
 # ==========================================================
 # VALIDATE
@@ -157,7 +155,9 @@ def incremental_load(input_path: str, **context) -> str:
         print(f"New Watermark       : {new_max}")
 
     out = os.path.join(DATA_DIR, "incremental.parquet")
-    df.to_parquet(out)
+
+    # Save incremental data
+    df.to_parquet(out, index=False)
 
     print(f"Input Rows          : {total_rows}")
     print(f"Rows Selected       : {len(df)}")
